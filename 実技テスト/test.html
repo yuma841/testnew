@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実技テスト</title>
+</head>
+<style>
+.content{
+    display: grid;
+    background-color:  rgb(241, 241, 221);
+    height: 130px;
+    gap: 15px;
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.box{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.text{
+    background-color: black;
+    color: white;
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+.mozi{
+    margin: 0;
+    padding: 0;
+}
+.form{
+    margin-left: 200px;
+}
+
+
+
+@media(max-width:767px){
+    .content{
+        grid-template-columns: 1fr 1fr;
+        height: 240px;
+    }
+    .text{
+        width: 767px;
+        height: 80px;
+    }
+    .form{
+        margin-left: auto;
+    }
+}
+</style>
+
+<body>
+    <div class="content">
+
+    <div class="item">
+        <div class="box"></div>
+        <p class="mozi">テキスト1</p>
+    </div>
+    <div class="item">
+        <div class="box"></div>
+        <p class="mozi">テキスト2</p>
+    </div>
+    <div class="item">
+        <div class="box"></div>
+        <p class="mozi">テキスト3</p>
+    </div>
+    <div class="item">
+        <div class="box"></div>
+        <p class="mozi">テキスト4</p>
+    </div>
+</div>
+    <h1 class="text">文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+    </h1>
+    <div style="text-align:center">
+    <img src="img/kapi.webp" alt="カピパラ">
+    </div>
+
+
+    <div class="form">
+       <label for="name">お名前</label>
+       <input type="text" id="name" name="name"required minlength="4" maxlength="8" size="20"/>
+        <p>返信を希望する方はチェックしてください<input type="checkbox" name="che" value="check"></p>
+        <p>メッセージ:<br>
+        <textarea name="comment" cols="30" rows="8"></textarea></p>
+        <p><input type="button" value="送信する" id="button2"></p>
+    </div>
+
+</body>
+</html>
